@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="content">
+    Tjsi is some text (bul rakiq) adn (from apples).
+</p>
+<script>
+    function solution(id){
+        let resultArr = [];
+        let text = document.getElementById(id).textContent;
+        let regex = /\((.+)\)/g;
+        let match = regex.exec(text);
+        while(match){
+            resultArr.push(match[1]);
+            match = regex.exec(text);
+        }
+        return resultArr.join("; ");
+
+    }
+   console.log(solution('content'));
+</script>
+</body>
+</html>
