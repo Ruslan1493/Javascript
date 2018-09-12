@@ -1,0 +1,30 @@
+<div class="container">
+    {{> header }}
+    <table id="table">
+        <tr>
+            <th>Type of training</th>
+            <th>Description</th>
+            <th>Date</th>
+        </tr>
+    {{#each tr}}
+        <tr>
+        <td>
+            {{type}}
+        </td>
+        <td>
+            {{description}}
+        </td>
+        <td>
+            {{date}}
+        </td>
+            {{#if isCreator}}
+                <td>
+
+                    <a href="#/trainings" id="removeBtn" onclick=attachButtonsEvents("{{_id}}")>Remove</a>
+                </td>
+            {{/if}}
+        </tr>
+    {{/each}}
+        </table>
+</div>
+{{> footer }}

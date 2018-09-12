@@ -1,0 +1,22 @@
+<header>
+    <div class="jumbotron">
+        <div id="nav">
+        <h1>FIT app</h1>
+        {{#if loggedIn}}
+            <span>Welcome, {{username}}</span>
+        {{/if}}
+        <nav>
+            <a href="#/home" class="btn btn-default">Home</a>
+            <a href="#/about" class="btn btn-default">About</a>
+            {{#if loggedIn}}
+                <a href="#/trainings" class="btn btn-dark">Trainings</a>
+                <a href="#/logout" class="btn btn-dark">Logout</a>
+                <a href="#/addTraining" class="btn btn-dark">Add training</a>
+             {{else}}
+                 <a href="#/login" class="btn btn-dark">Login</a>
+                 <a href="#/register" class="btn btn-dark">Register</a>
+            {{/if}}
+        </nav>
+        </div>
+    </div>
+</header>

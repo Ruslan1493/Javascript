@@ -1,0 +1,49 @@
+.details-box p {
+    margin: 1.5em;
+}
+
+.member {
+    font-size: 1.5em;
+    margin: 0.25em;
+    margin-left: 1em;
+    list-style-type: none;
+    display: block;
+}
+
+.titlebar {
+    display: block;
+    font-size: 2em;
+    padding: 0.25em;
+    padding-left: 0.75em;
+}
+
+.spanner {
+    display: block;
+    padding: 0.25em;
+    padding-left: 1.5em;
+    background-color: antiquewhite;
+    font-weight: 600;
+}
+
+.jumbotron{
+    background-image: url("bestProject.jpg");
+    background-repeat:no-repeat;
+    background-size:100% 100%;
+    color: floralwhite;
+    display: block;
+    height: 300px;
+}
+h1{
+    font-family: Impact, Charcoal, sans-serif;
+}
+#nav{
+    display: block;
+    text-align: center;
+    position: absolute;
+    margin-left: 100px;
+    margin-top: 100px;
+}
+
+
+
+
