@@ -1,0 +1,1 @@
+My app project which can store the users input about their trainings and use it as a diary.
